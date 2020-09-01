@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <section class="home">
+        <p>We Bake Happiness</p>
+        <h1>Food Delivered To your Home</h1>
+
+    </section>
+
+    <section class="service-container">
+        <h1 class="h1-primary">Our Services</h1>
+
+        <h2 class="h3-secondary">Cakes</h2>
+
+        <div class="fat">
+{% for cake in cake %}
+        <div id="services">
+            <div class="box">
+                <img src="{{cake.image.url}}" alt="">
+                <h2 class="h2-secondary center"><a href="#">{{cake.name}}</a></h2>
+                <p>{{cake.description}}</p>
+            </div>
+           
+        </div>
+{% endfor %}
+        </div>
+
+        <h2 class="h3-secondary">Ice Creams</h2>
+
+
+        <div class="fat">
+{% for icecream in icecream %}
+        <div id="services">
+            <div class="box">
+                <img src="{{icecream.image.url}}" alt="">
+                <h2 class="h2-secondary center"><a href="#">{{icecream.name}}</a></h2>
+                <p>{{icecream.description}}</p>
+            </div>
+          
+        </div>
+{% endfor %}
+        </div>
+
+        <h2 class="h3-secondary">Chocolates</h2>
+
+        <div class="fat">
+{% for choco in choco %}
+        <div id="services">
+            <div class="box">
+                <img src="{{choco.image.url}}" alt="">
+                <h2 class="h2-secondary center"><a href="#">{{choco.name}}</a></h2>
+                <p>{{choco.description}}</p>
+            </div>
+           
+        </div>
+{% endfor %}
+        </div>
+
+        <h2 class="h3-secondary">Sweets</h2>
+
+        <div class="fat">
+{% for sweets in sweets %}
+        <div id="services">
+            <div class="box">
+                <img src="{{sweets.image.url}}" alt="">
+                <h2 class="h2-secondary center"><a href="#">{{sweets.name}}</a></h2>
+                <p>{{sweets.description}}</p>
+            </div>
+           
+        </div>
+{% endfor %}
+        </div>
+
+    </section>
+
+
+{% endblock content %}
