@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+{% for a,t,p,d in data %}
+<br>
+<br>
+<br>
+    <h1>{{a}} </h1>
+    <h4>{{t}} </h4>
+    <br>
+    <h4>{{d}} </h4>
+    <h6>{{p}} </h6>
+
+{% endfor %}
+{% endblock content %}
