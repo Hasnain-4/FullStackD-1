@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .h1-primary {
+        font-size: 4rem;
+        margin-bottom: 10px;
+        text-shadow: 4px 9px 4px rgb(140, 153, 65);
+    }
+
+    .h2secondary {
+        font-size: 2rem;
+    }
+
+    .container {
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 6rem;
+        max-width:100%;
+        background-color: #4c3804;
+    }
+       
+    .container p{
+        font-size: 1.2rem;
+    }
+
+    .row {
+        margin: 3rem;
+    }
+
+    .col-25 {
+        float: left;
+        width: 55%;
+        margin-right: 4rem;
+        text-align: justify;
+    }
+    .col-25 h2{
+       margin-bottom: 2rem;
+    }
+
+    .col-75 {
+        float: left;
+        width: 35%;
+        margin-right: 2rem;
+        text-align: justify;
+    }
+    .col-75 h2{
+       margin-bottom: 2rem;        
+
+    }
+
+    section .sec{
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .abtimage{
+       margin-top: 9rem;
+       display: inline-block;
+       background-color: #4c3804;
+       color: white;
+       padding: 3rem 3rem;
+     }
+    .abtimage img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+        box-shadow: 2px 2px 7px rgb(0, 0, 0);
+        margin-top: -6.5rem;
+        
+    }
+    .abtimage h2{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        }
+    .abtimage p{
+        text-align: center;
+        }
+        #nav{
+            height:85px;
+        }
+
+        @media (max-width: 711px) {
+
+        
+            .h1-primary {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .container p{
+                font-size: .8rem;
+            }
+
+            .row {
+                margin: 2rem;
+            }
+
+            .col-25 {
+                float: left;
+                width: 100%;
+                text-align: justify;
+            }
+            .col-25 h2{
+            margin-bottom: 2rem;
+            }
+            .col-75 h2{
+            margin-top: 2rem;
+            }
+
+            .col-75 {
+                float: left;
+                width: 100%;
+                margin-right: 2rem;
+                text-align: justify;
+            }
+            .col-75 h2{
+            margin-bottom: 2rem;        
+
+            }
+            .abtimage img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            box-shadow: 2px 2px 7px rgb(0, 0, 0);
+            margin-top: -5.5rem;
+            
+        }
+        #nav ul li a {
+            padding: 9px 10px;
+            list-style: none;
+            border-radius: 1rem;
+            font-size:.9rem;
+
+        }
+
+        #nav{
+            height:65px;
+        }
+
+
+
+        }
+
+        @media (max-width: 1060px){
+            .row {
+                margin: 2rem;
+            }
+
+            .col-25 {
+                float: left;
+                width: 100%;
+                text-align: justify;
+            }
+            .col-25 h2{
+            margin-bottom: 2rem;
+            }
+            .col-75 h2{
+            margin-top: 2rem;
+            }
+
+            .col-75 {
+                float: left;
+                width: 100%;
+                margin-right: 2rem;
+                text-align: justify;
+            }
+            .col-75 h2{
+            margin-bottom: 2rem;        
+
+            }
+
+        }
+</style>
+
+    <div class="container">
+        <h1 class="h1-primary">We Bake Your Happiness</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum, repellat cupiditate debitis tenetur
+            aperiam!</p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <h2 class="h2secondary">About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, veritatis non officia libero recusandae quo obcaecati praesentium numquam aliquam adipisci nam voluptatum beatae voluptatem eum ab dolor deleniti hic, earum odio, laborum quos quis culpa commodi. Quaerat voluptatum nostrum illum numquam cum modi delectus fugit perspiciatis labore pariatur provident error sit velit doloribus impedit sunt possimus enim, quibusdam sint! Adipisci facere accusamus sapiente ea fugiat explicabo, ullam dicta? Fuga dolorem esse placeat quas perferendis, repellat fugiat. Eum unde magnam odit at sequi doloremque laudantium quae perspiciatis voluptate laborum eaque, adipisci officia alias fugit aliquam sapiente, officiis recusandae laboriosam autem consequuntur quo velit. Odio voluptate eveniet doloremque a fuga dolorum quia expedita eos iusto cumque explicabo, tempore dolore laborum deleniti, veniam ipsam autem nemo quibusdam? Ipsa in corrupti accusantium quos dolor rerum libero dolores aliquam perferendis et vitae, blanditiis repudiandae, velit natus est beatae laudantium obcaecati placeat voluptatibus deserunt doloribus! Ratione, fugit corrupti minus eius quas saepe optio rem illo consequatur illum necessitatibus suscipit enim officiis fuga, hic adipisci, aliquid accusamus at veritatis eaque repellat dignissimos voluptatum quos? Sapiente vel, repellat nobis deserunt hic optio eligendi incidunt ut necessitatibus, id iste temporibus ducimus aliquam odit. Veniam maxime delectus amet, maiores voluptatibus quidem ullam obcaecati dolorem cum! Temporibus aliquid magni sunt id, eos, repellendus non sed modi a natus cum reprehenderit porro veniam labore quidem maxime corrupti quis accusamus quae facere consectetur voluptatem facilis itaque?</p>
+        </div>
+        <div class="col-75">
+            <h2 class="h2secondary">Goal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas quas ut voluptatum? Iure, tempora. Recusandae, voluptate commodi excepturi cumque magnam illo ullam suscipit vero quia ipsa nulla nisi, optio perferendis quam rem magni. Rerum quibusdam pariatur voluptatibus corrupti omnis alias similique a! Assumenda laborum vero perspiciatis molestias natus eum accusamus ullam! Delectus et aliquam temporibus at rem officia iure asperiores harum deserunt quo perferendis aliquid molestiae ipsum quisquam, nihil, ab dolores placeat exercitationem rerum mollitia. Illo aspernatur, ratione nobis facere odio labore magnam corrupti expedita velit cumque nisi possimus? Sint aperiam rem tempora excepturi doloribus expedita veritatis et perferendis commodi officia, enim voluptatum molestiae voluptate architecto modi ratione quisquam quae ut exercitationem ullam neque debitis. Molestiae fugit ad doloribus, temporibus ratione, assumenda consequatur rem fuga quaerat, dolor ducimus iusto quam velit et.</p>
+        </div>
+    </div>
+    
+    <section class="sec">
+
+        <div class="abtimage">
+            
+            <img src="static/John.jpg" alt="">
+            <h2 class="h3-secondary">Hasnain Ansari</h2>
+            <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque non, dolore veritatis ut tempora numquam, porro soluta vero, laboriosam magnam asperiores? sit amet consectetur adipisicing elit. Suscipit a nisi necessitatibus, ullam illum aspernatur!</p>
+        </div>
+        
+    </section>
+   
+
+{% endblock content %}

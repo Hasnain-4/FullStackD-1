@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Cake, Ice_cream,Chocolate,Sweets
+from .models import Cake, Ice_cream,Chocolate,Sweets,Cont
 from math import ceil
 
 # Create your views here.
@@ -47,3 +47,16 @@ def news(request):
         data = zip(auth,tit,pub,desc)
 
     return render(request, 'news.html',{'data':data})
+
+def contact(request):
+    if request.method=='POST':
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        message=request.POST.get('message')
+        con=Cont(name=name,email=email,message=message)
+        con.save()
+    return render(request, 'contact.html')
+
+def about(request):
+
+    return render(request, 'about.html')
